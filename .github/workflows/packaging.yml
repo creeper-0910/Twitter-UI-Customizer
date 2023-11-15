@@ -37,7 +37,7 @@ jobs:
 
     make-release:
         runs-on: ubuntu-latest
-        needs: [build-firefox, build-chromium, build-chromium-crx]
+        needs: [build-firefox, build-chromium]
         steps:
             - name: Create Release
               id: create_release
